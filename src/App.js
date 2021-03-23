@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "./axios";
-
+import Row from "./Row";
+import request from "./request";
+import Navbar from "./Navbar";
 function App() {
-  // async function fetch_data(value) {
-
-  // }
-
-  // return <h1>{fetch_data("Trending").request[0].title}</h1>;
-  return <h1>HEHE</h1>;
+  return (
+    //HeaderNav
+    <div className="App">
+      <Navbar />
+      <Row title="Trending" fetchUrl={request.Trending} />
+      <Row title="Top Rated" fetchUrl={request.TopRated} />
+      <Row title="Comedy Movies" fetchUrl={request.ComedyMovies} />
+      <Row title="Documentaries" fetchUrl={request.Documentaries} />
+      <Row title="Horror Movies" fetchUrl={request.HorrorMovies} />
+      <Row title="Romantic Movies" fetchUrl={request.RomanticMovies} />
+      <Row title="Action Movies" fetchUrl={request.ActionMovies} />
+    </div>
+  );
 }
-
 export default App;
