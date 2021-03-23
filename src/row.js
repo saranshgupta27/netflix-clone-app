@@ -1,11 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "./axios";
 
 function row() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return <div>hehehe</div>;
 }
 
-export default row
+export default row;
