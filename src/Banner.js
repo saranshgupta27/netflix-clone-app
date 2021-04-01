@@ -26,6 +26,7 @@ function Banner() {
         backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
       }}
     >
+      <div id="overlay"></div>
       <div className="banner-contents">
         <h1 id="banner-title">
           {movie?.original_title || movie?.original_name || movie?.title}

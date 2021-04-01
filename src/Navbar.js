@@ -12,24 +12,35 @@ function Navbar() {
           "rgba(255, 255, 255, 0)";
       }
     });
-    return () => document.removeEventListener("scroll");
   }, []);
 
   return (
     <div className="Navbar">
-      <img
-        id="logo"
-        className="nav-img"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-        alt="Netflix Logo"
-      />
+      <a href="/.index.html">
+        <img
+          id="logo"
+          className="nav-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          alt="Netflix Logo"
+        />
+      </a>
 
       <ul id="menu-text">
-        <li>Home</li>
-        <li>Tv Shows</li>
-        <li>Movies</li>
-        <li>New & Popular</li>
-        <li>My List</li>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./index.html">Tv Shows</a>
+        </li>
+        <li>
+          <a href="./index.html">Movies</a>
+        </li>
+        <li>
+          <a href="./index.html">New & Popular</a>
+        </li>
+        <li>
+          <a href="./index.html">My List</a>
+        </li>
       </ul>
 
       <img id="search" className="nav-img" src={search} alt="Search" />

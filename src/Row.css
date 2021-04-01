@@ -38,3 +38,7 @@
 .tile_Large {
   max-height: 300px;
 }
+
+.row {
+  z-index: 99;
+}
