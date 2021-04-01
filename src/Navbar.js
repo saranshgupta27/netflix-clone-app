@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <div className="Navbar">
-      <a href="/.index.html">
+      <a href="/index.html">
         <img
           id="logo"
           className="nav-img"
@@ -27,19 +27,19 @@ function Navbar() {
 
       <ul id="menu-text">
         <li>
-          <a href="./index.html">Home</a>
+          <a href="/index.html">Home</a>
         </li>
         <li>
-          <a href="./index.html">Tv Shows</a>
+          <a href="/index.html">Tv Shows</a>
         </li>
         <li>
-          <a href="./index.html">Movies</a>
+          <a href="/index.html">Movies</a>
         </li>
         <li>
-          <a href="./index.html">New & Popular</a>
+          <a href="/index.html">New & Popular</a>
         </li>
         <li>
-          <a href="./index.html">My List</a>
+          <a href="/index.html">My List</a>
         </li>
       </ul>
 
