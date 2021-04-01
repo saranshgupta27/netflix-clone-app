@@ -95,7 +95,8 @@
   .banner-desc {
     width: 90%;
   }
-  #banner {
+  #banner,
+  #overlay {
     height: 60vh;
   }
 }
