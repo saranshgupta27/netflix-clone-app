@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 import "./search.png";
 import search from "./search.png";

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
-import axios from "./axios";
-import Row from "./Row";
+
+import Row from "./Row.js";
 import request from "./request";
 import Navbar from "./Navbar";
 import Banner from "./Banner";

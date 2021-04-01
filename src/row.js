@@ -30,9 +30,9 @@ function Row({ title, fetchUrl, isbig }) {
       seturl("");
     } else {
       movieTrailer(
-        movie?.name ||
+        movie?.title ||
           movie?.original_title ||
-          movie?.title ||
+          movie?.name ||
           movie?.original_name ||
           ""
       )
