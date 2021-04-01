@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar.css";
+import "./search.png";
+import search from "./search.png";
 function Navbar() {
   return (
     <div className="Navbar">
@@ -18,12 +20,7 @@ function Navbar() {
         <li>My List</li>
       </ul>
 
-      <img
-        id="search"
-        className="nav-img"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--W18wy6a2ieVL6AoUwTx7OwzuY1-ncqVeA&usqp=CAUg"
-        alt="Search"
-      />
+      <img id="search" className="nav-img" src={search} alt="Search" />
       <img
         id="p-pic"
         className="nav-img"
