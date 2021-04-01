@@ -6,14 +6,14 @@
   z-index: 100;
   position: fixed;
   width: 100vw;
-  /*background-color: black;
-  */
+  transition: all 0.5s;
   color: white;
-  transition: all ease-out 0.2s;
-  -webkit-transition: all ease-out 0.2s;
-  -moz-transition: all ease-out 0.2s;
-  -ms-transition: all ease-out 0.2s;
-  -o-transition: all ease-out 0.2s;
+  transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0s;
+  -moz-transition: all ease-out 0.5s;
+  -ms-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0.5s;
 }
 .Navbar > img {
   width: 100px;

@@ -6,15 +6,6 @@ import request from "./request";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 function App() {
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      document.querySelector(".Navbar").style.backgroundColor = "black";
-      if (window.scrollY === 0) {
-        document.querySelector(".Navbar").style.backgroundColor =
-          "rgba(255, 255, 255, 0)";
-      }
-    });
-  });
   document.title = "Netflix-Clone";
   return (
     //HeaderNav

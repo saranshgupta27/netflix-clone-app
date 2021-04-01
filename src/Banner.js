@@ -27,13 +27,16 @@ function Banner() {
       }}
     >
       <div className="banner-contents">
-        <h1 id="banner-title">{movie.original_title || movie.original_name}</h1>
+        <h1 id="banner-title">
+          {movie?.original_title || movie?.original_name || movie?.title}
+        </h1>
         <div id="btn-container">
           <button className="banner-button">Play</button>
           <button className="banner-button">My List</button>
         </div>
         <p class="banner-desc">{movie.overview}</p>
       </div>
+      <div class="black-gradient"></div>
     </div>
   );
 }

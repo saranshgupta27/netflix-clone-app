@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import "./search.png";
 import search from "./search.png";
 function Navbar() {
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      document.querySelector(".Navbar").style.backgroundColor = "black";
+
+      if (window.scrollY <= 100) {
+        document.querySelector(".Navbar").style.backgroundColor =
+          "rgba(255, 255, 255, 0)";
+      }
+    });
+    return () => document.removeEventListener("scroll");
+  }, []);
+
   return (
     <div className="Navbar">
       <img
