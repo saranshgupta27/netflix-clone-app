@@ -1,4 +1,4 @@
-const api_key = "e470560acfb347655d8af373c29aba11";
+import api_key from "./env.js";
 
 const request = {
   Trending: `/trending/all/week?api_key=${api_key}&language=en-US`,
