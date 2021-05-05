@@ -18,7 +18,6 @@ function Banner() {
     }
     fetchData();
   }, []);
-  console.log(movie);
   return (
     <div
       id="banner"
@@ -35,9 +34,9 @@ function Banner() {
           <button className="banner-button">Play</button>
           <button className="banner-button">My List</button>
         </div>
-        <p class="banner-desc">{movie.overview}</p>
+        <p className="banner-desc">{movie.overview}</p>
       </div>
-      <div class="black-gradient"></div>
+      <div className="black-gradient"></div>
     </div>
   );
 }
